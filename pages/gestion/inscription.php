@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css/gestion/connexion.css">
+<link rel="stylesheet" type="text/css" href="css/gestion/inscription.css">
 <script src="pages/gestion/inscription.js"></script>
 
 <div class="container">

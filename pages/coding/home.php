@@ -7,7 +7,23 @@
 
     <div class="row">
       <h3 class="col-md-12" >Point physics p5.js</h3>
-      <a class="col-md-12" href="index.php?page=coding/points/points.html">Go to test</a>
+      <a class="col-md-12" href="index.php?page=coding/points/points.html">Go to test!</a>
+    </div>
+
+    <div class="dropdown-divider"></div>
+
+    <div class="row">
+      <h3 class="col-md-12">Show stats with Wikipedia api</h3>
+      <p class="col-md-12">A small project to get stats on a wikipedia to train my javascript on using an API and then presenting some results on a p5.js canvas. I aim to then generate a terrain for a little 2d platform game with the generated graph.</p>
+      <a class="col-md-12" href="index.php?page=coding/wikipediaApi/wikipediaApi.html">Go to test!</a>
+    </div>
+
+    <div class="dropdown-divider"></div>
+
+    <div class="row">
+      <h3 class="col-md-12">2 player platform shooter</h3>
+      <p class="col-md-12">small p5.js canvas project. </p>
+      <a class="col-md-12" href="index.php?page=coding/shooterMulti/shooterMulti.html">Go to test!</a>
     </div>
 
     <div class="dropdown-divider"></div>

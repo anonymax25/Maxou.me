@@ -38,14 +38,13 @@ class User implements JsonSerializable{
 
   public static function connect(array $data): array{
     //API URL
-    $url = 'http://localhost/Maxou.me/API/api/user/connect.php';
+    $url = 'http://Maxou.me/API/api/user/connect.php';
 
     $data["token"] = "supertokensananes";
 
     $ch = curl_init($url);
     $payload = json_encode($data);
 
-    var_dump($payload);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

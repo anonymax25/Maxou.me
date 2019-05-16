@@ -14,5 +14,10 @@
 
 html,body{
     height: 100%;
-    font-weight: px;
+    /*font-weight: px;*/
+}
+
+.navActive{
+    font-weight: 20px;
+    background-color: #AB56B2;
 }

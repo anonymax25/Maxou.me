@@ -15,10 +15,10 @@ if (FieldValidator::validate($json , ['email', 'password', 'token']) && $json['t
   $new = UserService::getInstance()->connect($user);
 
   if ($new) {
-    http_response_code(201);
+    http_response_code(200);
     echo json_encode($new);
   } else {
-    http_response_code(500);
+    http_response_code(403);
   }
 
 } else {

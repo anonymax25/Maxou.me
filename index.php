@@ -33,12 +33,17 @@ session_start();
   //include page
   if(isset($_GET["page"])){
     include "pages/".$_GET["page"];
+    if(strpos($_GET["page"], 'coding') === false){
+      include 'footer.php';
+    }
+
   }else{
     include 'pages/home/home.php';
+    include 'footer.php';
   }
 
 
-  include 'footer.php';
+
 
   ?>
 </body>

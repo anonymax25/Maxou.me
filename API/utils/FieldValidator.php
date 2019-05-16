@@ -3,7 +3,10 @@
 
 class FieldValidator{
 
-  public static function validate(array $data, array $fields): bool {
+  public static function validate(?array $data, array $fields): bool {
+    if ($data == NULL) {
+      return false;
+    }
     foreach ($fields as $field) {
       if (!isset($data[$field])) {
         return false;

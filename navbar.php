@@ -11,13 +11,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.php?page=home/home.php">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link <?php if(strpos($_GET["page"], 'home/') !== false ){ echo "active "; }?>" href="index.php?page=home/home.php">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?page=coding/home.php">Code stuff</a>
+        <a class="nav-link <?php if(strpos($_GET["page"], 'coding/') !== false ){ echo "active "; }?>" href="index.php?page=coding/home.php">Code stuff</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle <?php if(strpos($_GET["page"], 'tools') !== false ){ echo "active "; }?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tools <div class="fas fa-tools"></div>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -28,7 +28,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?page=general/about.php">About</a>
+        <a class="nav-link <?php if(strpos($_GET["page"], 'about') !== false ){ echo "active "; }?>" href="index.php?page=general/about.php">About</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -50,10 +50,10 @@
         </li>
       <?php }else{ ?>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=gestion/connexion.php">Sign in</a>
+          <a class="nav-link <?php if(strpos($_GET["page"], 'connexion') !== false ){ echo "active "; }?>" href="index.php?page=gestion/connexion.php">Sign in</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=gestion/inscription.php">Sign up</a>
+          <a class="nav-link <?php if(strpos($_GET["page"], 'inscription') !== false ){ echo "active "; }?>" href="index.php?page=gestion/inscription.php">Sign up</a>
         </li>
       <?php } ?>
     </ul>
